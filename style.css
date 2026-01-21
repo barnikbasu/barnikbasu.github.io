@@ -25,8 +25,10 @@ a:hover {
   padding: 15px;
   background: #040b14;
   overflow-y: auto;
+  transition: left 0.3s ease;   /* ✅ IMPORTANT */
 }
 
+/* ------------------ PROFILE ------------------ */
 .profile img {
   margin: 15px auto;
   display: block;
@@ -187,10 +189,19 @@ section {
   color: #149ddd;
 }
 
-/* ------------------ RESPONSIVE ------------------ */
+/* ------------------ RESPONSIVE (FINAL FIX) ------------------ */
 @media (max-width: 768px) {
+
   #header {
-    left: -300px;
+    left: -300px;        /* hidden by default */
+  }
+
+  body.mobile-nav-active #header {
+    left: 0;             /* shown when toggled */
+  }
+
+  body.mobile-nav-active {
+    overflow: hidden;    /* prevent background scroll */
   }
 
   #main {
@@ -199,9 +210,5 @@ section {
 
   .mobile-nav-toggle {
     display: block;
-  }
-
-  body.mobile-nav-active #header {
-    left: 0;
   }
 }
