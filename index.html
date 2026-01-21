@@ -1,140 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barnik Basu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-    body { background: #0f0f0f; color: #e5e5e5; line-height: 1.6; }
-    a { color: #7dd3fc; text-decoration: none; }
-    header { max-width: 900px; margin: auto; padding: 4rem 1.5rem 2rem; }
-    header h1 { font-size: 3rem; font-weight: 700; }
-    header p { color: #a3a3a3; margin-top: 0.5rem; }
-    nav { margin-top: 1.5rem; display: flex; gap: 1.5rem; }
-
-    section { max-width: 900px; margin: auto; padding: 3rem 1.5rem; }
-    section h2 { font-size: 1.8rem; margin-bottom: 1rem; }
-
-    .block { margin-bottom: 2rem; }
-    .muted { color: #a3a3a3; }
-
-    ul { padding-left: 1.2rem; }
-    li { margin-bottom: 0.4rem; }
-
-    footer { max-width: 900px; margin: auto; padding: 2rem 1.5rem; color: #737373; font-size: 0.9rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barnik Basu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Barnik Basu</h1>
-  <p>IIITK’29 | Computer Science & Engineering Undergraduate</p>
-  <p class="muted">India</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <i class="fas fa-bars mobile-nav-toggle" id="navToggle"></i>
 
-<section id="about">
-  <h2>About</h2>
-  <div class="block">
-    <p>
-      I'm Barnik Basu, a computer science undergraduate at the Indian Institute of Information Technology, Kalyani. I am passionate about leveraging technology and data-driven solutions. My interests include data structures, web development, data science, and machine learning.
-    </p>
-    <p class="muted" style="margin-top:1rem;">
-      I enjoy solving complex problems and turning ideas into reality through code. I am eager to collaborate on innovative projects and connect with like-minded professionals to learn, build, and grow together.
-    </p>
-  </div>
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="https://via.placeholder.com/150" alt="Barnik Basu" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Barnik Basu</a></h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://www.linkedin.com/in/barnikbasu-4b9930383" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/barnikbasu" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                    <a href="mailto:barnikbasu@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
 
-  <div class="block">
-    <strong>Current Focus</strong>
-    <ul>
-      <li>Building full-stack web applications</li>
-      <li>Exploring data science and machine learning</li>
-      <li>Contributing to open-source projects</li>
-      <li>Learning new technologies and best practices</li>
-    </ul>
-  </div>
-</section>
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
+                    <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> <span>Resume & Certs</span></a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="block">
-    <strong>Circuit Breakers – Bluetooth Controlled Car</strong>
-    <p class="muted">Oct 2025 – Nov 2025 · IIIT Kalyani</p>
-    <p style="margin-top:0.5rem;">
-      A Bluetooth-controlled two-wheel robotic car built using Arduino Uno and HC-05 Bluetooth module. The vehicle is wirelessly controlled via a smartphone application, supporting forward, backward, left, right, and stop movements.
-    </p>
-    <ul style="margin-top:0.5rem;">
-      <li>Wireless control using HC-05 Bluetooth module</li>
-      <li>Arduino Uno as the main microcontroller</li>
-      <li>L298N motor driver for DC motor control</li>
-      <li>Scalable and cost-effective robotic prototype</li>
-    </ul>
-  </div>
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container">
+            <h1>Barnik Basu</h1>
+            <p>I'm <span class="typed">a CSE Undergraduate</span>, <span class="typed">an Open Source Enthusiast</span>, <span class="typed">a Full-Stack Aspirant</span></p>
+        </div>
+    </section>
 
-  <div class="block">
-    <strong>Autonomous / Remote-Controlled Soccer Robot</strong>
-    <p class="muted">Hands-on Robotics Project</p>
-    <p style="margin-top:0.5rem;">
-      Designed and programmed a robot capable of playing soccer either autonomously or via remote control, focusing on real-time decision making and control systems.
-    </p>
-  </div>
-</section>
+    <main id="main">
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="block">
-    <ul>
-      <li>C Programming</li>
-      <li>Java</li>
-      <li>Open-Source Development</li>
-      <li>Git & GitHub</li>
-      <li>Data Structures</li>
-      <li>Web Development</li>
-    </ul>
-  </div>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p>I'm a passionate computer science student with a keen interest in building full-stack applications and exploring the realms of data science and machine learning. I love solving complex problems and turning ideas into reality through code.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="https://via.placeholder.com/400" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                        <h3>B.Tech Student &amp; Developer</h3>
+                        <p class="fst-italic">
+                            "Constantly learning and building innovative projects."
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech CSE (IIIT Kalyani)</span></li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Website:</strong> <span>barnikbasu.github.io</span></li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>City:</strong> <span>Kolkata/Kalyani, India</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong> <span>barnikbasu@gmail.com</span></li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Languages:</strong> <span>English, Hindi, Bengali</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                            I am eager to apply emerging technologies to create sustainable, practical solutions. Excited to collaborate on innovative projects and connect with like-minded professionals to learn, build and grow together!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="block">
-    <strong>Languages</strong>
-    <ul>
-      <li>English – Full Professional</li>
-      <li>Hindi – Full Professional</li>
-      <li>Bengali – Native / Bilingual</li>
-    </ul>
-  </div>
-</section>
+        <section id="resume" class="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>My educational background and professional milestones.</p>
+                </div>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="block">
-    <strong>Indian Institute of Information Technology, Kalyani</strong>
-    <p class="muted">B.Tech in Computer Science & Engineering · 2025 – 2029</p>
-  </div>
-  <div class="block">
-    <strong>St. Xavier's Institution</strong>
-    <p class="muted">School Education · 2010 – 2025</p>
-  </div>
-</section>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>B.Tech in Computer Science & Engineering</h4>
+                            <h5>2025 - 2029</h5>
+                            <p><em>Indian Institute of Information Technology (IIIT), Kalyani</em></p>
+                            <p>Focusing on Data Structures, Web Development, and Machine Learning.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Secondary & Higher Secondary</h4>
+                            <h5>2010 - 2025</h5>
+                            <p><em>St. Xavier's Institution</em></p>
+                        </div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="block">
-    <p>Email: <a href="mailto:barnikbasu@gmail.com">barnikbasu@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/barnikbasu-4b9930383/" target="_blank">linkedin.com/in/barnikbasu</a></p>
-    <p>GitHub: <a href="https://github.com/barnikbasu" target="_blank">github.com/barnikbasu</a></p>
-  </div>
-</section>
+                        <h3 class="resume-title">Technical Skills</h3>
+                        <div class="resume-item">
+                            <ul>
+                                <li><strong>Languages:</strong> C, Java, Python (Basic)</li>
+                                <li><strong>Development:</strong> Web Development, Open-Source</li>
+                                <li><strong>Data Science:</strong> Machine Learning, Data Structures</li>
+                            </ul>
+                        </div>
+                    </div>
 
-<footer>
-  © 2026 Barnik Basu · Built with GitHub Pages
-</footer>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Certifications & Achievements</h3>
+                        <div class="resume-item">
+                            <h4>Introduction to Data Science</h4>
+                            <p><em>Cisco Networking Academy</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Contributor Badge (Winter of Code 5.0)</h4>
+                            <p><em>Open Source Contribution</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Git, Set, Go! Workshop</h4>
+                            <p><em>GDG on Campus & FOSS Club, IIIT Kalyani</em></p>
+                            <p>2-Day Git & GitHub Workshop.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Kolkata Tech Workshop</h4>
+                            <p><em>Kshitij (IIT Kharagpur) x Google for Developers x TCS</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Ten Days of Code</h4>
+                            <p><em>NIT Durgapur</em></p>
+                            <p>Certificate of Participation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Open to collaborating on innovative projects.</p>
+                </div>
+
+                <div class="info">
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>barnikbasu@gmail.com</p>
+                    </div>
+
+                    <div class="phone">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>LinkedIn:</h4>
+                        <p><a href="https://www.linkedin.com/in/barnikbasu-4b9930383">Connect on LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Mobile Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.body.classList.toggle('mobile-nav-active');
+            this.classList.toggle('fa-bars');
+            this.classList.toggle('fa-times');
+        });
+
+        // Simple Typing Effect for Hero
+        const words = ["Developer.", "Student.", "Open Source Enthusiast."];
+        let i = 0;
+        let timer;
+        
+        // Note: For a smoother typing effect, I recommend using a library like typed.js 
+        // later, but this simple text replacement works for now without external dependencies.
+    </script>
 </body>
 </html>
