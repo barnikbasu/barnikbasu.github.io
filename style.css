@@ -1,270 +1,207 @@
-/* General */
+/* ------------------ GLOBAL ------------------ */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #272829;
-    background-color: #f5f8fd;
+  font-family: "Poppins", sans-serif;
+  background: #040b14;
+  color: #ffffff;
+  margin: 0;
 }
 
 a {
-    color: #149ddd;
-    text-decoration: none;
+  color: #149ddd;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #37b3ed;
-    text-decoration: none;
+  color: #37b3ed;
 }
 
-/* Header & Sidebar */
+/* ------------------ HEADER ------------------ */
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    transition: all ease-in-out 0.5s;
-    z-index: 9997;
-    padding: 0 15px;
-    background: #040b14;
-    overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: #040b14;
+  overflow-y: auto;
 }
 
-#header .profile img {
-    margin: 15px auto;
-    display: block;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border: 8px solid #2c2f3f;
+.profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
 }
 
-#header .profile h1 {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+.profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
 }
 
-#header .profile h1 a {
-    color: #fff;
-    text-decoration: none;
+.profile h1 a {
+  color: #fff;
 }
 
-#header .profile .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #212431;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
+.social-links {
+  text-align: center;
+  margin-top: 15px;
 }
 
-#header .profile .social-links a:hover {
-    background: #149ddd;
-    color: #fff;
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
 }
 
-/* Navigation Menu */
-.nav-menu {
-    padding-top: 30px;
+.social-links a:hover {
+  background: #149ddd;
 }
 
+/* ------------------ NAVBAR ------------------ */
 .nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
 }
 
 .nav-menu a {
-    display: flex;
-    align-items: center;
-    color: #a8a9b4;
-    padding: 12px 15px;
-    margin-bottom: 8px;
-    transition: 0.3s;
-    font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 10px 15px;
+  font-size: 15px;
 }
 
 .nav-menu a i {
-    font-size: 24px;
-    padding-right: 8px;
-    color: #6f7180;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
-.nav-menu a:hover, .nav-menu .active {
-    color: #fff;
-    text-decoration: none;
+.nav-menu a:hover,
+.nav-menu .active {
+  color: #fff;
 }
 
-.nav-menu a:hover i, .nav-menu .active i {
-    color: #149ddd;
+/* ------------------ MOBILE TOGGLE ------------------ */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
 }
 
-/* Main Content Area */
+/* ------------------ MAIN ------------------ */
 #main {
-    margin-left: 300px;
-    padding: 20px;
+  margin-left: 300px;
 }
 
-/* Hero Section */
+/* ------------------ HERO ------------------ */
 #hero {
-    width: 100%;
-    height: 100vh;
-    /* You can replace this URL with a background image of your choice later */
-    background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80") top center;
-    background-size: cover;
-    position: relative;
-    padding-left: 300px; /* Offset for sidebar */
-    color: white;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #040b14);
+  display: flex;
+  align-items: center;
 }
 
-#hero:before {
-    content: "";
-    background: rgba(5, 13, 24, 0.7); /* Dark overlay so text is readable */
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+.hero-container {
+  padding-left: 50px;
 }
 
-#hero .hero-container {
-    position: relative;
-    z-index: 2;
-    min-width: 300px;
-    text-align: center;
+.hero-container h1 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
-#hero h1 {
-    margin: 0 0 10px 0;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
+.hero-container p {
+  font-size: 22px;
+  margin-top: 10px;
 }
 
-/* Sections General */
+/* ------------------ SECTIONS ------------------ */
 section {
-    padding: 60px 0;
-    overflow: hidden;
-}
-
-.section-title {
-    padding-bottom: 30px;
+  padding: 60px 40px;
 }
 
 .section-title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #173b6c;
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #149ddd;
+  display: inline-block;
 }
 
-.section-title h2::after {
-    content: '';
-    position: absolute;
+.section-title p {
+  color: #cfd0d4;
+}
+
+/* ------------------ ABOUT ------------------ */
+.about img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  padding-bottom: 10px;
+}
+
+/* ------------------ RESUME ------------------ */
+.resume-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.resume-item {
+  padding: 20px;
+  background: #1f2532;
+  border-left: 4px solid #149ddd;
+  margin-bottom: 20px;
+}
+
+/* ------------------ CONTACT ------------------ */
+.contact .info {
+  background: #1f2532;
+  padding: 30px;
+}
+
+.contact .info i {
+  font-size: 24px;
+  color: #149ddd;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 768px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  .mobile-nav-toggle {
     display: block;
-    width: 50px;
-    height: 3px;
-    background: #149ddd;
-    bottom: 0;
+  }
+
+  body.mobile-nav-active #header {
     left: 0;
-}
-
-/* Resume Section (New) */
-.resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #050d18;
-}
-
-.resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #1f5297;
-    position: relative;
-}
-
-.resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #050d18;
-    margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-    font-size: 16px;
-    background: #e4edf9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #1f5297;
-}
-
-/* Mobile Responsive */
-@media (max-width: 1199px) {
-    #header {
-        left: -300px;
-    }
-    #main, #hero {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    
-    .mobile-nav-toggle {
-        display: block;
-        position: fixed;
-        right: 15px;
-        top: 15px;
-        z-index: 9998;
-        border: 0;
-        font-size: 24px;
-        transition: all 0.4s;
-        outline: none !important;
-        background-color: #149ddd;
-        color: #fff;
-        width: 40px;
-        height: 40px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    
-    body.mobile-nav-active #header {
-        left: 0;
-    }
-}
-@media (min-width: 1200px) {
-    .mobile-nav-toggle {
-        display: none;
-    }
+  }
 }
