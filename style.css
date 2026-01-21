@@ -33,6 +33,8 @@ a:hover {
     margin: 15px auto;
     display: block;
     width: 120px;
+    height: 120px;
+    object-fit: cover;
     border: 8px solid #2c2f3f;
 }
 
@@ -116,7 +118,8 @@ a:hover {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("https://via.placeholder.com/1920x1080") top center;
+    /* You can replace this URL with a background image of your choice later */
+    background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80") top center;
     background-size: cover;
     position: relative;
     padding-left: 300px; /* Offset for sidebar */
@@ -125,7 +128,7 @@ a:hover {
 
 #hero:before {
     content: "";
-    background: rgba(5, 13, 24, 0.7);
+    background: rgba(5, 13, 24, 0.7); /* Dark overlay so text is readable */
     position: absolute;
     bottom: 0;
     top: 0;
@@ -167,27 +170,62 @@ section {
     color: #173b6c;
 }
 
-/* Portfolio Grid */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
 }
 
-.portfolio-item {
+/* Resume Section (New) */
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
     background: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.portfolio-wrap img {
-    width: 100%;
-    transition: 0.3s;
-}
-
-.portfolio-info {
-    padding: 20px;
+    border: 2px solid #1f5297;
 }
 
 /* Mobile Responsive */
