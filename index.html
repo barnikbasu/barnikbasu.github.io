@@ -170,21 +170,20 @@
 
     </main>
 
-    <script>
-        // Mobile Toggle
-        document.getElementById('navToggle').addEventListener('click', function() {
-            document.body.classList.toggle('mobile-nav-active');
-            this.classList.toggle('fa-bars');
-            this.classList.toggle('fa-times');
-        });
+<script>
+const texts = [
+  "a CSE Undergraduate",
+  "an Open Source Enthusiast",
+  "a Full-Stack Aspirant"
+];
 
-        // Simple Typing Effect for Hero
-        const words = ["Developer.", "Student.", "Open Source Enthusiast."];
-        let i = 0;
-        let timer;
-        
-        // Note: For a smoother typing effect, I recommend using a library like typed.js 
-        // later, but this simple text replacement works for now without external dependencies.
-    </script>
+let index = 0;
+const span = document.querySelector(".typed");
+
+setInterval(() => {
+  span.textContent = texts[index];
+  index = (index + 1) % texts.length;
+}, 2000);
+</script>
 </body>
 </html>
