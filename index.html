@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BB | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barnik Basu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #0f172a; color: #e5e7eb; }
-    header { padding: 2rem; text-align: center; }
-    header h1 { font-size: 2.5rem; }
-    header p { color: #94a3b8; margin-top: 0.5rem; }
-
-    nav { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
-    nav a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #0f0f0f; color: #e5e5e5; line-height: 1.6; }
+    a { color: #7dd3fc; text-decoration: none; }
+    header { max-width: 900px; margin: auto; padding: 4rem 1.5rem 2rem; }
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header p { color: #a3a3a3; margin-top: 0.5rem; }
+    nav { margin-top: 1.5rem; display: flex; gap: 1.5rem; }
 
     section { max-width: 900px; margin: auto; padding: 3rem 1.5rem; }
-    h2 { font-size: 2rem; margin-bottom: 1rem; color: #38bdf8; }
-    .card { background: #020617; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+    section h2 { font-size: 1.8rem; margin-bottom: 1rem; }
 
-    .skills span { display: inline-block; background: #1e293b; padding: 0.4rem 0.8rem; border-radius: 20px; margin: 0.3rem; font-size: 0.9rem; }
+    .block { margin-bottom: 2rem; }
+    .muted { color: #a3a3a3; }
 
-    footer { text-align: center; padding: 2rem; color: #94a3b8; font-size: 0.9rem; }
-    a.btn { display: inline-block; margin-top: 1rem; background: #38bdf8; color: #020617; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.4rem; }
+
+    footer { max-width: 900px; margin: auto; padding: 2rem 1.5rem; color: #737373; font-size: 0.9rem; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>BB</h1>
-    <p>Computer Science Undergraduate | Competitive Programmer | Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Barnik Basu</h1>
+  <p>IIITK’29 | Computer Science & Engineering Undergraduate</p>
+  <p class="muted">India</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        I am a Computer Science undergraduate passionate about data structures,
-        algorithms, and software development. I enjoy building projects,
-        contributing to open source, and preparing for programs like GSoC.
-      </p>
-    </div>
-  </section>
+<section id="about">
+  <h2>About</h2>
+  <div class="block">
+    <p>
+      I'm Barnik Basu, a computer science undergraduate at the Indian Institute of Information Technology, Kalyani. I am passionate about leveraging technology and data-driven solutions. My interests include data structures, web development, data science, and machine learning.
+    </p>
+    <p class="muted" style="margin-top:1rem;">
+      I enjoy solving complex problems and turning ideas into reality through code. I am eager to collaborate on innovative projects and connect with like-minded professionals to learn, build, and grow together.
+    </p>
+  </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Quizora</h3>
-      <p>Real-time competitive quiz platform built using modern web technologies.</p>
-      <a class="btn" href="https://github.com/" target="_blank">View Project</a>
-    </div>
-    <div class="card">
-      <h3>DSA Practice Repository</h3>
-      <p>Collection of solved problems with clean explanations.</p>
-      <a class="btn" href="https://github.com/" target="_blank">View GitHub</a>
-    </div>
-  </section>
+  <div class="block">
+    <strong>Current Focus</strong>
+    <ul>
+      <li>Building full-stack web applications</li>
+      <li>Exploring data science and machine learning</li>
+      <li>Contributing to open-source projects</li>
+      <li>Learning new technologies and best practices</li>
+    </ul>
+  </div>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="card skills">
-      <span>C</span><span>C++</span><span>Python</span><span>HTML</span><span>CSS</span>
-      <span>JavaScript</span><span>Git</span><span>GitHub</span><span>DSA</span>
-    </div>
-  </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="block">
+    <strong>Circuit Breakers – Bluetooth Controlled Car</strong>
+    <p class="muted">Oct 2025 – Nov 2025 · IIIT Kalyani</p>
+    <p style="margin-top:0.5rem;">
+      A Bluetooth-controlled two-wheel robotic car built using Arduino Uno and HC-05 Bluetooth module. The vehicle is wirelessly controlled via a smartphone application, supporting forward, backward, left, right, and stop movements.
+    </p>
+    <ul style="margin-top:0.5rem;">
+      <li>Wireless control using HC-05 Bluetooth module</li>
+      <li>Arduino Uno as the main microcontroller</li>
+      <li>L298N motor driver for DC motor control</li>
+      <li>Scalable and cost-effective robotic prototype</li>
+    </ul>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: your-email@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
-    </div>
-  </section>
+  <div class="block">
+    <strong>Autonomous / Remote-Controlled Soccer Robot</strong>
+    <p class="muted">Hands-on Robotics Project</p>
+    <p style="margin-top:0.5rem;">
+      Designed and programmed a robot capable of playing soccer either autonomously or via remote control, focusing on real-time decision making and control systems.
+    </p>
+  </div>
+</section>
 
-  <footer>
-    © 2026 BB · Built with GitHub Pages
-  </footer>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="block">
+    <ul>
+      <li>C Programming</li>
+      <li>Java</li>
+      <li>Open-Source Development</li>
+      <li>Git & GitHub</li>
+      <li>Data Structures</li>
+      <li>Web Development</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <strong>Languages</strong>
+    <ul>
+      <li>English – Full Professional</li>
+      <li>Hindi – Full Professional</li>
+      <li>Bengali – Native / Bilingual</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="block">
+    <strong>Indian Institute of Information Technology, Kalyani</strong>
+    <p class="muted">B.Tech in Computer Science & Engineering · 2025 – 2029</p>
+  </div>
+  <div class="block">
+    <strong>St. Xavier's Institution</strong>
+    <p class="muted">School Education · 2010 – 2025</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="block">
+    <p>Email: <a href="mailto:barnikbasu@gmail.com">barnikbasu@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/barnikbasu-4b9930383/" target="_blank">linkedin.com/in/barnikbasu</a></p>
+    <p>GitHub: <a href="https://github.com/barnikbasu" target="_blank">github.com/barnikbasu</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Barnik Basu · Built with GitHub Pages
+</footer>
 
 </body>
 </html>
