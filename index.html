@@ -1,163 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BB | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f172a; color: #e5e7eb; }
+    header { padding: 2rem; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    header p { color: #94a3b8; margin-top: 0.5rem; }
+
+    nav { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
+    nav a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+
+    section { max-width: 900px; margin: auto; padding: 3rem 1.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #38bdf8; }
+    .card { background: #020617; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+
+    .skills span { display: inline-block; background: #1e293b; padding: 0.4rem 0.8rem; border-radius: 20px; margin: 0.3rem; font-size: 0.9rem; }
+
+    footer { text-align: center; padding: 2rem; color: #94a3b8; font-size: 0.9rem; }
+    a.btn { display: inline-block; margin-top: 1rem; background: #38bdf8; color: #020617; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
+  </style>
 </head>
 <body>
 
-    <i class="fas fa-bars mobile-nav-toggle" id="navToggle"></i>
+  <header>
+    <h1>BB</h1>
+    <p>Computer Science Undergraduate | Competitive Programmer | Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <header id="header">
-        <div class="d-flex flex-column">
-            <div class="profile">
-                <img src="https://via.placeholder.com/150" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html">Your Name</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="github"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Computer Science undergraduate passionate about data structures,
+        algorithms, and software development. I enjoy building projects,
+        contributing to open source, and preparing for programs like GSoC.
+      </p>
+    </div>
+  </section>
 
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
-                    <li><a href="#portfolio" class="nav-link"><i class="fas fa-book"></i> <span>Portfolio</span></a></li>
-                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Quizora</h3>
+      <p>Real-time competitive quiz platform built using modern web technologies.</p>
+      <a class="btn" href="https://github.com/" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h3>DSA Practice Repository</h3>
+      <p>Collection of solved problems with clean explanations.</p>
+      <a class="btn" href="https://github.com/" target="_blank">View GitHub</a>
+    </div>
+  </section>
 
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="hero-container">
-            <h1>Your Name</h1>
-            <p>I'm a <span class="typed">Developer, Designer, Freelancer</span></p>
-        </div>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>C</span><span>C++</span><span>Python</span><span>HTML</span><span>CSS</span>
+      <span>JavaScript</span><span>Git</span><span>GitHub</span><span>DSA</span>
+    </div>
+  </section>
 
-    <main id="main">
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: your-email@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    </div>
+  </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <div class="section-title">
-                    <h2>About</h2>
-                    <p>Write a brief introduction about yourself here. Describe your passion, your background, and what you are currently working on.</p>
-                </div>
-                
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="https://via.placeholder.com/400" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content">
-                        <h3>UI/UX Designer & Web Developer.</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <footer>
+    © 2026 BB · Built with GitHub Pages
+  </footer>
 
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Portfolio</h2>
-                    <p>Check out my recent projects.</p>
-                </div>
-
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="portfolio-wrap">
-                            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Project Name 1</h4>
-                                <p>Web Development</p>
-                                <div class="portfolio-links">
-                                    <a href="project-details.html" title="More Details"><i class="fas fa-link"></i> View Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-wrap">
-                            <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Project Name 2</h4>
-                                <p>App Design</p>
-                                <div class="portfolio-links">
-                                    <a href="#" title="More Details"><i class="fas fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Feel free to reach out to me via email or social media.</p>
-                </div>
-
-                <div class="info">
-                    <div class="address">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Location:</h4>
-                        <p>A108 Adam Street, New York, NY 535022</p>
-                    </div>
-
-                    <div class="email">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email:</h4>
-                        <p>info@example.com</p>
-                    </div>
-
-                    <div class="phone">
-                        <i class="fas fa-phone"></i>
-                        <h4>Call:</h4>
-                        <p>+1 5589 55488 55s</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <script>
-        document.getElementById('navToggle').addEventListener('click', function() {
-            document.body.classList.toggle('mobile-nav-active');
-            this.classList.toggle('fa-times');
-        });
-    </script>
 </body>
 </html>
